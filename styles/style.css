@@ -3,12 +3,14 @@
 :root {
 	--cor-primaria: #000000;
 	--cor-secundaria: #f6f6f6;
-	--cor-terciaria: #556B2F;
+	--cor-terciaria: #abedfe;
 	--cor-hover: #272727;
 
     --fonte-titulo: "Red Hat Display", sans-serif;
 	--fonte-primaria: "Red Hat Text", sans-serif;
 	--fonte-secundaria: "Roboto", sans-serif;
+
+	--imagem-url: url('../assets/foto-perfil.png');
 }
 
 body {
@@ -40,7 +42,7 @@ body {
 }
 
 .apresentacao {
-	padding: 5% 2%;
+	padding:2%;
 	display: flex;
 	align-items: center;
 	justify-content:center;
@@ -54,6 +56,7 @@ body {
 }
 
 .apresentacao__contatos{
+	width:600px;
 	height: 600px;
 	display: flex;
 	align-items: center;
@@ -65,7 +68,14 @@ body {
 
 .apresentacao__imagem {
 	width: 600px; 
-	border-radius: 50%;
+	height: 600px;
+	border-radius: 60%;
+	background-color: rgba(134, 159, 179, 0.794);
+	background-image: var(--imagem-url);
+	background-position:cover;
+	background-size:cover ;
+	background-repeat: no-repeat;
+	margin: 50px;
 }
 .apresentacao__conteudo__titulo {
 	font-size: 2.5rem;
@@ -152,10 +162,11 @@ body {
     width: 100%;
     background-color: var(--cor-terciaria);
     opacity: 0.7;
+	color: #000000;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     z-index: 999; /* Certifica-se de que o rodapé está sempre na frente */
 }
 
@@ -176,7 +187,23 @@ body {
 	}
 	.apresentacao__conteudo {
 		width: auto;
+		height: auto;
 	}
+
+	.apresentacao__imagem {
+		width: 300px;
+		height: 300px;
+		overflow: hidden;
+		text-indent: -9999px;
+		margin-bottom: 51px;
+		
+	}
+
+	.rodape{
+		height: 40px; 	
+	}
+	
+	
 }
 
 
